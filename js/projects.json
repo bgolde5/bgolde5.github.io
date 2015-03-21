@@ -3,5 +3,20 @@
 		"name": "Regular Expressions",
 		"image": "regex.png",
 		"url": "https://bradleygolden.github.io/UIC/cs301/index.html"
+	},
+	{
+		"name": "Coming Soon",
+		"image": "coming_soon.jpg",
+		"url": "#"
+	},
+	{
+		"name": "Coming Soon",
+		"image": "coming_soon.jpg",
+		"url": "#"
+	},
+	{
+		"name": "Coming Soon",
+		"image": "coming_soon.jpg",
+		"url": "#"
 	}
 ]

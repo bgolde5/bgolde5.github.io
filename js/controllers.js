@@ -1,13 +1,14 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('MyController', ['$scope', '$http', function ($scope, $http) {
-	$http.get('/js/projects.json').success(function (data) {
-		$scope.project = data;
+myApp.controller('ThumbNails', ['$scope', '$http', function ($scope, $http) {
+	$http.get('/js/projects.json').
+	success(function (data) {
+		$scope.projects = data;
 	});
 }]);
-
-myApp.controller('MyController2', function MyController2($scope) {
-	$scope.project = {
-		name: 'regex.png'
-	}
-});
+myApp.controller('ProgressBars', ['$scope', '$http', function ($scope, $http) {
+	$http.get('/js/experience.json').
+	success(function (data) {
+		$scope.languages = data;
+	});
+}]);

@@ -74,7 +74,7 @@
 		.avatar {
 			height: 15%;
 			width: 15%;
-			border-style: solid;
+			border-style: dashed;
 			border-width: 0.1em;
 			border-color: white;
 		}
@@ -156,7 +156,6 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#fullpage').fullpage({
-				slidesColor: ['#1440CC', '#3D5399', '#00C3FF', '#FF8340'],
 				anchors: ['intro', 'about', 'projects', 'resume', 'contact'],
 				scrollBar: true,
 				menu: '#menu'
@@ -192,7 +191,8 @@
 					<img class="avatar img-circle" src="img/myAvatar.png">
 					<hr>
 					<p>I'm currently studying computer science at the University of Illinois at Chicago.</p>
-					<p>I have an interest in mobile and web application development.</p>
+					<p>I have an interest in mobile and web application development. Check out my projects below.</p>
+					<hr>
 				</div>
 				<a class="arrow-bottom fade" href="#projects"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 			</div>
@@ -201,64 +201,70 @@
 		<!-------PROJECTS------->
 
 		<div class="section" id="section2">
-			<a class="arrow-top fade" href="#about"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
-			<h1 class="row">Projects</h1>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-6 col-sm-3 fade">
-						<a href="https://bradleygolden.github.io/UIC/cs301/index.html" target="_blank" class="thumbnail">
-							<img src="/img/projects/regex.png" alt="...">
-						</a>
+			<div class="container-fluid">
+				<a class="arrow-top fade" href="#about"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
+				<h1>Projects</h1>
+				<div class="container">
+					<div class="row">
+						<div ng-controller="ThumbNails">
+							<!-- build project thumbnails from json -->
+							<div ng-repeat="project in projects">
+								<div class="col-xs-6 col-sm-3 fade">
+									<a href="{{project.url}}" class="thumbnail" target="_blank">
+										<img ng-src="/img/projects/{{project.image}}" alt="...">
+									</a>
+								</div>
+								<div ng-if="$index == 1" class="clearfix visible-xs-block"></div>
+							</div>
+							<!-- end thumbnails -->
+						</div>
 					</div>
-					<div class="col-xs-6 col-sm-3 fade">
-						<a href="#" class="thumbnail">
-							<img src="/img/projects/coming_soon.jpg" alt="...">
-						</a>
-					</div>
-					<!-- Add the extra clearfix for only the required viewport -->
-					<div class="clearfix visible-xs-block"></div>
-					<div class="col-xs-6 col-sm-3 fade">
-						<a href="#" class="thumbnail">
-							<img src="/img/projects/coming_soon.jpg" alt="...">
-						</a>
-					</div>
-					<div class="col-xs-6 col-sm-3 fade">
-						<a href="#" class="thumbnail">
-							<img src="/img/projects/coming_soon.jpg" alt="...">
-						</a>
-					</div>
-					<div class="col-xs-6 col-sm-3 fade" ng-controller="MyController">
-						<a href="#" class="thumbnail">
-							<img ng-src="/img/projects/{{project.image}}" alt="...">
-						</a>
-					</div>
+					<a class="arrow-bottom fade " href="#resume "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
 				</div>
 			</div>
-			<a class="arrow-bottom fade" href="#resume"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 		</div>
 
 		<!-------RESUME------->
-
 		<div class="section" id="section3">
-			<div class="container-fluid">
-				<a class="arrow-top fade" href="#projects"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
-				<h1>Resume</h1>
-				<br><a class="fade" href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/export?format=pdf">Click to Download</a>
+			<a class="arrow-top fade " href="#projects "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
+			<h1>Experience</h1>
+			<div class="container">
 				<div class="row">
-					<iframe class="resume fade" src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
+					<div class="col-md-6">
+						<div ng-controller="ProgressBars" class="progressBars">
+							<div ng-repeat="current in languages">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="{{current.experience}}" aria-valuemin="0" aria-valuemax="100" style="width: {{current.experience}}%;">
+										{{current.language}}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						test
+					</div>
 				</div>
+
+
+
+				<br><a class="fade " href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/export?format=pdf ">Download Resume</a>
+				<div class="row ">
+					<!--<iframe class="resume fade " src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
+				</div> -->
+				</div>
+				<a class="arrow-bottom fade " href="#contact "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
 			</div>
-			<a class="arrow-bottom fade" href="#contact "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
 		</div>
 		<div class="section " id="section4">
-			<div class="container">
-				<a class="arrow-top fade" href="#resume "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
-				<a class="fade" href="https://www.facebook.com/golden.bradley " target="_blank "><i class="fa fa-facebook-square fa-5x "></i></a>
-				<a class="fade" href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
-				<a class="fade" href="https://github.com/bradleygolden " target="_blank "><i class="fa fa-git-square fa-5x "></i></a>
-				<a class="fade" href="https://plus.google.com/u/0/+BradleyGolden1 " target="_blank "><i class="fa fa-google-plus-square fa-5x "></i></a>
-				<a class="fade" href="mailto:golden.bradley@gmail.com " target="_blank "><i class="fa fa-envelope-square fa-5x "></i></a>
-				</br><a class="footer fade" href="#intro ">Back to Beginning</a>
+			<div class="container ">
+				<a class="arrow-top fade " href="#resume "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
+				<a class="fade " href="https://www.facebook.com/golden.bradley " target="_blank "><i class="fa fa-facebook-square fa-5x "></i></a>
+				<a class="fade " href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
+				<a class="fade " href="https://github.com/bradleygolden " target="_blank "><i class="fa fa-git-square fa-5x "></i></a>
+				<a class="fade " href="https://plus.google.com/u/0/+BradleyGolden1 " target="_blank "><i class="fa fa-google-plus-square fa-5x "></i></a>
+				<a class="fade " href="mailto:golden.bradley@gmail.com " target="_blank "><i class="fa fa-envelope-square fa-5x "></i></a>
+				</br><a class="footer fade " href="#intro ">Back to Beginning</a>
 			</div>
 		</div>
 	</div>

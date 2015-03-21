@@ -1,0 +1,30 @@
+[
+	{
+		"language": "C",
+		"experience": "99"
+	},
+	{
+		"language": "C++",
+		"experience": "25"
+	},
+	{
+		"language": "Java",
+		"experience": "20"
+	},
+	{
+		"language": "Javascript",
+		"experience": "60"
+	},
+	{
+		"language": "HTML",
+		"experience": "90"
+	},
+	{
+		"language": "CSS",
+		"experience": "60"
+	},
+	{
+		"language": "Angular JS",
+		"experience": "10"
+	}
+]
