@@ -49,8 +49,8 @@
 	<script type="text/javascript" src="fullpage.js/jquery.fullPage.js"></script>
 
 	<style>
-		a,
-		a:focus {
+		.fade,
+		.fade:focus {
 			text-decoration: none;
 			color: white;
 			-o-transition: .5s;
@@ -61,10 +61,61 @@
 			opacity: 0.6;
 		}
 		
-		a:hover {
+		.fade:hover {
 			text-decoration: none;
 			color: white;
 			opacity: 0.9;
+		}
+		
+		#menu li {
+			display: inline-block;
+			margin: 5px;
+			color: #000;
+			background: #fff;
+			background: rgba(255, 255, 255, 0.5);
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+		}
+		
+		#menu li.active,
+		#menu li.active:hover {
+			background: #666;
+			background: rgba(0, 0, 0, 0.5);
+			color: #fff;
+		}
+		
+		#menu li a {
+			text-decoration: none;
+			color: #000;
+		}
+		
+		#menu li.active a:hover {
+			color: #000;
+		}
+		
+		#menu li:hover {
+			background: rgba(255, 255, 255, 0.8);
+		}
+		
+		#menu li a,
+		#menu li.active a {
+			padding: 9px 18px;
+			display: block;
+		}
+		
+		#menu li.active a {
+			color: #fff;
+		}
+		
+		#menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 40px;
+			z-index: 70;
+			width: 100%;
+			padding: 0;
+			margin: 0;
 		}
 		
 		.avatar {
@@ -96,16 +147,6 @@
 		.resume {
 			width: 70%;
 			height: 70vh;
-			-o-transition: .5s;
-			-ms-transition: .5s;
-			-moz-transition: .5s;
-			-webkit-transition: .5s;
-			transition: .5s;
-			opacity: 0.6;
-		}
-		
-		.resume:hover {
-			opacity: 0.9;
 		}
 		
 		#section0 {
@@ -154,7 +195,8 @@
 			$('#fullpage').fullpage({
 				slidesColor: ['#1440CC', '#3D5399', '#00C3FF', '#FF8340'],
 				anchors: ['intro', 'about', 'projects', 'resume', 'contact'],
-				scrollBar: true
+				scrollBar: true,
+				menu: '#menu'
 			});
 		});
 	</script>
@@ -163,56 +205,93 @@
 </head>
 
 <body>
+	<ul id="menu">
+		<li data-menuanchor="section0" role="presentation"><a href="#intro">Intro</a>
+		</li>
+		<li data-menuanchor="section1" role="presentation"><a href="#about">About</a>
+		</li>
+		<li data-memnuachor="section2" role="presentation"><a href="#projects">Projects</a>
+		</li>
+		<li data-memnuachor="section3" role="presentation"><a href="#resume">Resume</a>
+		</li>
+		<li data-memnuachor="section4" role="presentation"><a href="#contact">Contact</a>
+		</li>
+	</ul>
+
 	<div id="fullpage">
+
+
+
+
 		<div class="section" id="section0">
 			<div class="container">
 				<div class="row">
 					<p style="font-size:10em;padding-right:30%;">Hi;</p>
 					<p style="font-size:1.5em;">My name is Bradley and I'm a computer science student.
 					</p>
-					<a class="arrow-bottom" href="#about"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
+					<a class="arrow-bottom fade" href="#about"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 				</div>
 			</div>
 
 		</div>
 		<div class="section" id="section1">
 			<div class="container">
-				<a class="arrow-top" href="#intro"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
+				<a class="arrow-top fade" href="#intro"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
 				<div class="row">
 					<img class="avatar" src="img/myAvatar.png">
 					<p>I'm currently studying computer science at the University of Illinois at Chicago.</p>
-					<p>I have an interest in mobile and web application development</p>
+					<p>I have an interest in mobile and web application development.</p>
 				</div>
-				<a class="arrow-bottom" href="#projects"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
+				<a class="arrow-bottom fade" href="#projects"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 			</div>
 		</div>
 		<div class="section" id="section2">
 			<div class="container">
-				<a class="arrow-top" href="#about"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
-				<div class="row">Projects</div>
-				<a class="arrow-bottom" href="#resume"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
+				<a class="arrow-top fade" href="#about"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
+				<h1 class="row">Projects</h1>
+				<div class="col-xs-6 col-md-3 fade">
+					<a href="https://bradleygolden.github.io/UIC/cs301/index.html" class="thumbnail">
+						<img src="/img/projects/regex.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3 fade">
+					<a href="#" class="thumbnail">
+						<img src="/img/myAvatar.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3 fade">
+					<a href="#" class="thumbnail">
+						<img src="/img/myAvatar.png" alt="...">
+					</a>
+				</div>
+				<div class="col-xs-6 col-md-3 fade">
+					<a href="#" class="thumbnail">
+						<img src="/img/myAvatar.png" alt="...">
+					</a>
+				</div>
 			</div>
+			<a class="arrow-bottom fade" href="#resume"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 		</div>
 		<div class="section" id="section3">
 			<div class="container-fluid">
-				<a class="arrow-top" href="#projects"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
+				<a class="arrow-top fade" href="#projects"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
 				<h1>Resume</h1>
 				<div class="row">
-					<iframe class="resume" src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
+					<iframe class="resume fade" src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
 				</div>
-				</br><a href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/export?format=pdf">Download</a>
+				</br><a class="fade" href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/export?format=pdf">Download</a>
 			</div>
-			<a class="arrow-bottom " href="#contact "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
+			<a class="arrow-bottom fade" href="#contact "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
 		</div>
 		<div class="section " id="section4">
 			<div class="container ">
-				<a class="arrow-top " href="#resume "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
-				<a href="https://www.facebook.com/golden.bradley " target="_blank "><i class="fa fa-facebook-square fa-5x "></i></a>
-				<a href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
-				<a href="https://github.com/bradleygolden " target="_blank "><i class="fa fa-git-square fa-5x "></i></a>
-				<a href="https://plus.google.com/u/0/+BradleyGolden1 " target="_blank "><i class="fa fa-google-plus-square fa-5x "></i></a>
-				<a href="mailto:golden.bradley@gmail.com " target="_blank "><i class="fa fa-envelope-square fa-5x "></i></a>
-				</br><a class="footer " href="#intro ">Back to Beginning</a>
+				<a class="arrow-top fade" href="#resume "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
+				<a class="fade" href="https://www.facebook.com/golden.bradley " target="_blank "><i class="fa fa-facebook-square fa-5x "></i></a>
+				<a class="fade" href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
+				<a class="fade" href="https://github.com/bradleygolden " target="_blank "><i class="fa fa-git-square fa-5x "></i></a>
+				<a class="fade" href="https://plus.google.com/u/0/+BradleyGolden1 " target="_blank "><i class="fa fa-google-plus-square fa-5x "></i></a>
+				<a class="fade" href="mailto:golden.bradley@gmail.com " target="_blank "><i class="fa fa-envelope-square fa-5x "></i></a>
+				</br><a class="footer fade" href="#intro ">Back to Beginning</a>
 			</div>
 		</div>
 	</div>
