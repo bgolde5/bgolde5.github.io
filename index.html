@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap 101 Template</title>
+	<title>Bradley Golden</title>
 
 	<!-- Bootstrap -->
 	<!-- Latest compiled and minified CSS -->
@@ -76,15 +76,31 @@
 			text-align: center;
 		}
 		
-		.arrow {
+		.arrow-bottom {
 			position: absolute;
-			bottom: 5px;
-			text-align: center;
+			bottom: 1em;
+			margin-left: -1.5em;
+		}
+		
+		.arrow-top {
+			position: absolute;
+			top: 1em;
+			margin-left: -1.5em;
 		}
 		
 		.resume-background {
-			opacity: 0.5;
-			height: 60em;
+			width: 70%;
+			height: 40em;
+			-o-transition: .5s;
+			-ms-transition: .5s;
+			-moz-transition: .5s;
+			-webkit-transition: .5s;
+			transition: .5s;
+			opacity: 0.6;
+		}
+		
+		.resume-background:hover {
+			opacity: 0.9;
 		}
 		
 		#section0 {
@@ -144,54 +160,56 @@
 <body>
 	<div id="fullpage">
 		<div class="section" id="section0">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<p style="font-size:20em;padding-right:20%;">Hi.</p>
 					<p style="font-size:1.5em;margin-top:-5em;">My name is Bradley and I'm a computer science student.
 					</p>
-					<br>
+					<a class="arrow-bottom" href="#about"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 				</div>
 			</div>
-			<a class="arrow" href="#about"><i class="fa fa-arrow-down fa-5x faa-bounce animated"></i></a>
+
 		</div>
 		<div class="section" id="section1">
-			<div class="container">
+			<div class="container-fluid">
+				<a class="arrow-top" href="#intro"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
 				<div class="row">
 					<p>I'm currently studying computer science at the University of Illinois at Chicago.</p>
 					<p>I have an interest in mobile and web application development</p>
 				</div>
+				<a class="arrow-bottom" href="#projects"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 			</div>
-			<a class="arrow" href="#projects"><i class="fa fa-arrow-down fa-5x faa-bounce animated"></i></a>
 		</div>
 		<div class="section" id="section2">
 			<div class="container">
+				<a class="arrow-top" href="#about"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
 				<div class="row">Projects</div>
+				<a class="arrow-bottom" href="#resume"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 			</div>
-			<a class="arrow" href="#resume"><i class="fa fa-arrow-down fa-5x faa-bounce animated"></i></a>
 		</div>
 		<div class="section" id="section3">
 			<div class="container-fluid">
-				<div class="row">Resume</div>
-				<div class="well resume-background">...</div>
-			</div>
-
-			<a class="arrow" href="#contact"><i class="fa fa-arrow-down fa-5x faa-bounce animated"></i></a>
-		</div>
-		<div class="section" id="section4">
-			<div class="container">
+				<a class="arrow-top" href="#projects"><i class="fa fa-arrow-up fa-3x faa-bounce animated"></i></a>
 				<div class="row">
+					<h1>Resume</h1>
 				</div>
-				<a href="https://www.facebook.com/golden.bradley" target="_blank"><i class="fa fa-facebook-square fa-5x"></i></a>
-				<a href="https://www.linkedin.com/in/goldenbradley" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
-				<a href="https://github.com/bgolde5" target="_blank"><i class="fa fa-git-square fa-5x"></i></a>
-				<a href="https://plus.google.com/u/0/+BradleyGolden1" target="_blank"><i class="fa fa-google-plus-square fa-5x"></i></a>
-				<a href="mailto:golden.bradley@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-5x"></i></a>
-				</br><a class="footer" href="#intro">Top of the Page</a>
+				<iframe class="resume-background" src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
+				</br><a href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub">Download Here</a>
+			</div>
+			<a class="arrow-bottom " href="#contact "><i class="fa fa-arrow-down fa-3x faa-bounce animated "></i></a>
+		</div>
+		<div class="section " id="section4">
+			<div class="container ">
+				<a class="arrow-top " href="#resume "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
+				<a href="https://www.facebook.com/golden.bradley " target="_blank "><i class="fa fa-facebook-square fa-5x "></i></a>
+				<a href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
+				<a href="https://github.com/bgolde5 " target="_blank "><i class="fa fa-git-square fa-5x "></i></a>
+				<a href="https://plus.google.com/u/0/+BradleyGolden1 " target="_blank "><i class="fa fa-google-plus-square fa-5x "></i></a>
+				<a href="mailto:golden.bradley@gmail.com " target="_blank "><i class="fa fa-envelope-square fa-5x "></i></a>
+				</br><a class="footer " href="#intro ">Back to Beginning</a>
 			</div>
 		</div>
 	</div>
-
-
 </body>
 
 </html>
