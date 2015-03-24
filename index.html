@@ -53,6 +53,60 @@
 	<script type="text/javascript" src="fullpage.js/jquery.fullPage.js"></script>
 
 	<style>
+		@-webkit-keyframes typing {
+			from {
+				width: 0
+			}
+			to {
+				width: 2em
+			}
+		}
+		
+		@-moz-keyframes typing {
+			from {
+				width: 0
+			}
+			to {
+				width: 2em
+			}
+		}
+		
+		@-webkit-keyframes blink-caret {
+			from, to {
+				border-color: transparent
+			}
+			50% {
+				border-color: white
+			}
+		}
+		
+		@-moz-keyframes blink-caret {
+			from, to {
+				border-color: transparent
+			}
+			50% {
+				border-color: white
+			}
+		}
+		
+		#hi {
+			font-family: Consolas, monospace;
+			margin-left: 30%;
+			font-size: 700%;
+			width: 2em;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: .5em solid white;
+			-webkit-animation: typing 2s steps(4, end),
+			/* # of steps = # of characters */
+			
+			blink-caret 1s step-end infinite;
+			-moz-animation: typing 2s steps(4, end),
+			/* # of steps = # of characters */
+			
+			blink-caret 1s step-end infinite;
+		}
+		
 		.fade,
 		.fade:focus {
 			text-decoration: none;
@@ -169,15 +223,11 @@
 <body>
 
 	<div id="fullpage">
-
-
-
-
 		<div class="section" id="section0">
 			<div class="container">
 				<div class="row">
-					<p style="font-size:10em;padding-right:30%;">Hi;</p>
-					<p style="font-size:1.5em;">My name is Bradley and I'm a programmer, computer science student, and life hacker.
+					<p id="hi">Hi;</p>
+					<p style="font-size:1.5em;font-family: consolas, monospace;">My name is Bradley and I'm a programmer and computer science student.
 					</p>
 					<a class="arrow-bottom fade" href="#about"><i class="fa fa-arrow-down fa-3x faa-bounce animated"></i></a>
 				</div>
@@ -234,7 +284,7 @@
 						<div ng-controller="ProgressBars" class="progressBars">
 							<div ng-repeat="current in languages">
 								<div class="progress">
-									<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="{{current.experience}}" aria-valuemin="0" aria-valuemax="100" style="width: {{current.experience}}%;">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{current.experience}}" aria-valuemin="0" aria-valuemax="100" style="width: {{current.experience}}%;">
 										{{current.language}}
 									</div>
 								</div>
@@ -245,9 +295,6 @@
 						test
 					</div>
 				</div>
-
-
-
 				<br><a class="fade " href="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/export?format=pdf ">Download Resume</a>
 				<div class="row ">
 					<!--<iframe class="resume fade " src="https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/pub?embedded=true "></iframe>
