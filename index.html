@@ -279,20 +279,17 @@
 			<a class="arrow-top fade " href="#projects "><i class="fa fa-arrow-up fa-3x faa-bounce animated "></i></a>
 			<h1>Experience</h1>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div ng-controller="ProgressBars" class="progressBars">
-							<div ng-repeat="current in languages">
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{current.experience}}" aria-valuemin="0" aria-valuemax="100" style="width: {{current.experience}}%;">
-										{{current.language}}
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-            To see more of my experience, visit my linked in profile!
+        <div class="row">
+          <div ng-controller="ProgressBars" class="progressBars">
+            <div ng-repeat="current in languages">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="{{current.experience}}" aria-valuemin="0" aria-valuemax="100" style="width: {{current.experience}}%;">
+                  {{current.language}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <a class="fade " href="https://www.linkedin.com/in/goldenbradley " target="_blank "><i class="fa fa-linkedin-square fa-5x "></i></a>
           </div>
         </div>
