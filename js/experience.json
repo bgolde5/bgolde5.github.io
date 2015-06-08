@@ -1,30 +1,26 @@
 [
 	{
 		"language": "C",
-		"experience": "99"
-	},
-	{
-		"language": "C++",
-		"experience": "25"
+		"experience": "70"
 	},
 	{
 		"language": "Java",
-		"experience": "20"
+		"experience": "30"
 	},
 	{
 		"language": "Javascript",
-		"experience": "60"
+		"experience": "40"
 	},
+  {
+    "language": "Python"
+    "experience": "20" 
+  },
 	{
 		"language": "HTML",
-		"experience": "90"
+		"experience": "80"
 	},
 	{
 		"language": "CSS",
 		"experience": "60"
-	},
-	{
-		"language": "Angular JS",
-		"experience": "10"
 	}
 ]
