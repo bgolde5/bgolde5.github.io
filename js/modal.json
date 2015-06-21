@@ -1,0 +1,7 @@
+[
+  {
+    "Name" : "Regular Expression Evaluator",
+    "Skills/Knowledge Required" : "Recursion, Context Free Grammar, Javascript, HTML, CSS",
+    "Description" : "This regular expression evaluator is NOT using the traditional regular expression functionality provided by javascript. As a homework project, we were assigned to test whether a set of regular expressions was valid or not by using recursion. I decided to take it to the next level by converting the original assignment to a web ready application.",
+  }
+]
