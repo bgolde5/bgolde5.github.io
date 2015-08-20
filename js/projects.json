@@ -1,5 +1,10 @@
 [
 	{
+		"name": "Gmail Image Extractor",
+		"image": "Image-Extractor.png",
+		"url": "https://github.com/bradleygolden/gmail-image-extractor"
+	},
+	{
 		"name": "Regular Expressions",
 		"image": "regex.png",
 		"url": "https://bradleygolden.github.io/uic/cs301/index.html"
@@ -13,10 +18,5 @@
 		"name": "Arduino Security System",
 		"image": "arduino.png",
 		"url": "https://youtu.be/8FVMta54NvA"
-	},
-	{
-		"name": "Coming Soon",
-		"image": "coming_soon.jpg",
-		"url": "#"
 	}
 ]
