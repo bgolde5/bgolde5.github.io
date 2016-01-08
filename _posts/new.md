@@ -43,11 +43,11 @@ Oh no, here comes the Jesus talk.
 
 I'm going to spare you any religious dogma as I grew up with enough of it around me. If you already have some higher focus in a religion, non-profit organization, cult (cough cough Scientology), etc., good for you. I still want you to answer this question, what is your purpose in life?
 
-If you don't have an answer to that absolutely fundamental question, life may just flash before your eyes and before you know, you'll be on your death bed.
+If you don't have an answer to that absolutely fundamental question, life may flash before your eyes and before you know, you'll be on your death bed.
 
 My suggestion for you is this, discover a purpose that allows you to give your gift fully. What is a gift you might ask? Many people are gifted in different ways. For example, Bach's gift was music, Gandhi's gift was leading the Indian people to freedom, and Thomas Jefferson's gifts were learning and writing (among many other things).
 
-"But Bradley, you're telling me to just give my gift, I don't even know what my gift is or what a 'gift' is." Well ladies and gents, you must start somewhere.
+"But Bradley, you're telling me to just give my gift, I don't even know what my gift is." Well ladies and gents, you must start somewhere and beginning with not knowing is a great start.
 
 I recommend the book/audioCD below. It doesn't directly talk about purpose but you will find yourself more connected to the world and I believe that is not only the first place to start but the best.
 
