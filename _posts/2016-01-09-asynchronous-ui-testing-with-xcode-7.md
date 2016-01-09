@@ -45,4 +45,4 @@ NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == 1"];
 
 Now in this example, a bit more is going on. I use a predicate for the purpose of checking if something exists on the current view. I then tap the submit button and immediately enter an asynchronous loop. In that asynchronous loop I'm looking for an object to appear (the contact button). *Take note that that loop will run for at most 5 seconds.*
 
-If segueing to the view with the contact button only takes 1 seconds after pressing the submit button, then the contact button will be tapped right away. If the loop takes more than 5 seconds, then the test fails. How convenient!
+If segueing to the view with the contact button only takes 1 second after pressing the submit button, then the contact button will be tapped right away. If the loop takes more than 5 seconds, then the test fails. How convenient!
