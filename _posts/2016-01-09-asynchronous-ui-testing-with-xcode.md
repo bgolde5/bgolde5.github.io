@@ -14,7 +14,9 @@ What I'd like to do is simulate a UI test by pressing the submit button and then
 
 **Locating The Problem**
 
-Navigate to "SubmitViewController.m"
+First **[download the app here](https://github.com/bradleygolden/async-ui-testing-xcode-demo)**.
+
+Once the app is downloaded, navigate to "SubmitViewController.m"
 
 You'll find the following method in that file:
 
