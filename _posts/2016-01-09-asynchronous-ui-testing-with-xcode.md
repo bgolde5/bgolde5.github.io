@@ -53,6 +53,7 @@ You'll find 3 tests.
  - testButtonAsync
 
 Go ahead and run the tests with <code>CMD-B + CMD-U</code>
+
 Now run the tests a few times. What did you notice?
 
 2 of the 3 test should pass consistently but one of the tests will fail. Why is that?
@@ -96,7 +97,7 @@ Now take a look at the testButtonSync method:
 }
 {% endhighlight %}
 
-Notice that the tester decided to fixed the issue of not knowing the response time by delaying the app by 10 seconds. This works but now when you test, you'll have to wait for 10 seconds every time! What happens if the request is between 1-5 seconds as in our example?
+Notice that the tester decided to fix the issue of not knowing the response time by delaying the app by 10 seconds. This works but now you'll have to wait for 10 seconds every time! What happens if the request is between, 1-5 seconds as in our example?
 
 We want a way to click the button as soon as it's available.
 
@@ -127,4 +128,8 @@ In this example, I am using a predicate to check when <code>contactButton</code>
 
 <code>[self expectationForPredicate:exists evaluatedWithObject:contactButton handler:nil];</code>
 
-I then wait *at most* 10 seconds for the contact button to appear. Once the button appears the contact button will be tapped!
+I then wait *at most* 10 seconds for the contact button to appear:
+
+<code>[self waitForExpectationsWithTimeout:10 handler:nil];</code>
+
+ Once the button appears the contact button will be tapped immediately!
