@@ -97,7 +97,7 @@ Now take a look at the testButtonSync method:
 }
 {% endhighlight %}
 
-Notice that the tester decided to fix the issue of not knowing the response time by delaying the app by 10 seconds. This works but now you'll have to wait for 10 seconds every time! What happens if the request is between, 1-5 seconds as in our example?
+Notice that the tester decided to fix the issue of not knowing the response time by delaying the app by 10 seconds. This works but now you'll have to wait for 10 seconds every time you run the test simulator!
 
 We want a way to click the button as soon as it's available.
 
