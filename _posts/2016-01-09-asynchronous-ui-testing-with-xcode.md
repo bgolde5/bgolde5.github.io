@@ -58,7 +58,7 @@ Go ahead and run the tests with <code>CMD-B + CMD-U</code>
 
 Now run the tests a few times. What did you notice?
 
-2 of the 3 test should pass consistently but one of the tests will fail. Why is that?
+2 of the 3 tests should pass consistently but one of the tests will fail. Why is that?
 
 The issue is in the testButton method.
 
