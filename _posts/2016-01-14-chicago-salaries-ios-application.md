@@ -7,7 +7,11 @@ comments: True
 ## Introduction
 Over the winter break, my good friend Oliver San Juan and I wanted to make the best of our time by releasing an application into the app store. After many hours of work we finally completed ChiSalary and had it successfully approved by Apple! You can click the links below to view details about the application.
 
+<<<<<<< HEAD
 * **[View in iTunes Store](www.tinyurl.com/chisalary)**
+=======
+* **[View in iTunes Store](tinyurl.com/chisalary)**
+>>>>>>> c1a284e3e8ed8c71e230512e3b2bc02888eef577
 * **[View github repo](www.chisalaryapp.com)**
 
 ## About ChiSalary
