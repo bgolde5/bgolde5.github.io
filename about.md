@@ -2,10 +2,8 @@
 layout: page
 title: About
 ---
-Hi and welcome to my webpage.
+Hi and welcome to my blog.
 
-I'm currently studying Computer Science at the University of Illinois at Chicago. I'll be earning my degree in the spring of 2016.
+I'm a soon to be computer science grad working at CCC Information Services with the Architecture / R&D department. My role at CCCIS is to help iOS team with various things.
 
-I'm also working as an intern at CCC Information Services part time in the Architecture / R&D department. My role at CCCIS is to help iOS team with the development and testing of our newest mobile applications and SDK.
-
-My current interests lay in iOS development and mobile developement.
+My current interests are in mobile development, and my latest iOS project is ChiSalary, an app that let's you easily view the salaries of Chicago Employees. Click [here](http://bradleygolden.me/2016/01/14/chicago-salaries-ios-application/) to see more.
