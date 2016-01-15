@@ -6,7 +6,7 @@ relative_permalinks: true
 
 # Setup
 title:               Bradley Golden
-tagline:             
+tagline:
 url:                 http://bradleygolden.github.io
 paginate:            1
 baseurl:             ""
