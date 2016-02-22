@@ -32,4 +32,5 @@ pages_list:
   About: '/about'
   Archive: '/archive'
   Resume: '/resume'
+  LinkedIn: '/linkedin'
   Feed: '/atom.xml'
