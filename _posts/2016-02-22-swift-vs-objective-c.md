@@ -14,7 +14,7 @@ I will begin with a simple Q & A.
 #### Can I write a complete Swift framework without depending on Objective-C?  
 Yes, many popular apps such as lyft, Yahoo Weather, and LinkedIn are now entirely built in Swift. The process for creating a framework is similar except Objective-C is now replaced with Swift.
 
-Reference: http://www.apple.com/swift/
+Reference: <http://www.apple.com/swift/>
 
 #### Are Swift frameworks compatible with app’s written in Objective-C?
 Yes, Swift frameworks are compatible with apps previously written in Objective-C with some caveats. The following Swift only features will not be available to Objective-C apps:
@@ -29,9 +29,9 @@ Yes, Swift frameworks are compatible with apps previously written in Objective-C
  * Nested types
  * Curried functions
 
-Reference: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html#//apple_ref/doc/uid/TP40014216-CH10-ID136
+Reference: <https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html#//apple_ref/doc/uid/TP40014216-CH10-ID136>
 
-Reference: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
+Reference: <https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html>
 
 
 #### Are there any popular SDK’s or open source libraries already written in Swift? (e.g. Alamofire)
@@ -43,10 +43,10 @@ Some features in Swift are not available to Objective-C as mentioned earlier. Al
 #### Is Swift compatible with CocoaPods?
 Yes, you can use any pod written in Objective-C, Swift or both with an app written in Objective-C, Swift, or both. Just remember that some Swift features are not compatible with Objective-C.
 
-Reference: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html
+Reference: <https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html>
 
 #### What’s going to be changed in Swift in the near future?
-All information regarding upcoming changes to Swift can be found here: https://github.com/apple/swift-evolution
+All information regarding upcoming changes to Swift can be found here: <https://github.com/apple/swift-evolution>
 
 #### Conclusion
 After asking these questions myself, I determined this:
