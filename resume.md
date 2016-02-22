@@ -5,6 +5,6 @@ header : Resume
 group: navigation
 ---
 
-<meta http-equiv="refresh" content="0; URL=https://docs.google.com/document/d/161_c7KxzNEGwoxzD732M01JM4R0dAwAhiv85OHh7Tp4/edit?usp=sharing">
+<meta http-equiv="refresh" content="0; URL=https://drive.google.com/file/d/0B3O6dpa-XnSYbTJ4T1ZLVzc0MXc/view?usp=sharing">
 
 Redirecting to Bradley's resume...
