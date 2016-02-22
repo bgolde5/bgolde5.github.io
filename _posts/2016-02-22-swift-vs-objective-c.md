@@ -49,9 +49,9 @@ Reference: https://developer.apple.com/library/ios/documentation/Swift/Conceptua
 All information regarding upcoming changes to Swift can be found here: https://github.com/apple/swift-evolution
 
 #### Conclusion
-After asking these questions ourselves, we determined this:
-  1. There are still many companies out there using Objective-C. With that said, we've decided to continue to write SDK's in Objective-C, because we know that they will be compatible with both Objective-C apps and Swift apps. This is not the case however if we decide to write SDK's solely in Swift.
+After asking these questions myself, I determined this:
+  1. There are still many companies out there using Objective-C. With that said, I've decided to continue to write SDK's in Objective-C, because I know that they will be compatible with both Objective-C apps and Swift apps. This is not the case however if we decide to write SDK's solely in Swift.
 
-  2. If we're building an application that will have zero possible Objective-C dependencies, then Swift is a sure way to go because of its clean style and easy to learn syntax.
+  2. If I'm building an application that will have zero possible Objective-C dependencies, then Swift is a sure way to go because of its clean style and easy to learn syntax.
 
-  3. We will reassess this decision in the next year as the next Swift versions are introduced and we can determine that our clients will no longer need Objective-C frameworks.
+  3. I will reassess this decision in the next year as the next Swift versions are introduced and I can determine that my clients will no longer need Objective-C frameworks.
