@@ -18,6 +18,7 @@ Reference: <http://www.apple.com/swift/>
 
 #### Are Swift frameworks compatible with app’s written in Objective-C?
 Yes, Swift frameworks are compatible with apps previously written in Objective-C with some caveats. The following Swift only features will not be available to Objective-C apps:
+
  * Generics
  * Tuples
  * Enumerations defined in Swift without Int raw value type
