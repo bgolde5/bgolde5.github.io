@@ -4,7 +4,7 @@ title: Swift vs. Objective C
 comments: True
 ---
 
-<iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYUjJyQ2lCd2tHSnM/preview" width="640" height="480"></iframe>
+<iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYUjJyQ2lCd2tHSnM/preview" width="468" height="202"></iframe>
 
 ## Introduction
 So you're interested in developing software in Swift or Objective-C, but how do you know which to choose? I work at an enterprise level company that has recently researched this question, and I want to briefly share with you my findings so that you can make an informed decision.
