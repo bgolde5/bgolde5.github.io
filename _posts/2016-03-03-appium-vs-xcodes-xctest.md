@@ -32,7 +32,7 @@ Given the newest release of UI automated testing to Xcode's XCTest, Xcode is now
 
  I'm going to cover Appium and Xcode only for this post because personally, I've found these two to be the most convenient for mobile developers with little to no web experience or knowledge of ruby.
 
-### Appium
+## Appium
 This framework is tried and tested by many companies.
 
 Pros:
@@ -54,7 +54,7 @@ Cons:
 - Challenging to implement certain gestures
 - A lot more overhead for developers to learn on top of the development process
 
-### XCTest
+## XCTest
 This framework is now baked into Xcode. Developers can simply press a record button and build their UI tests with minimal effort.
 
 Pros:
