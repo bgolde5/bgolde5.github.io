@@ -82,12 +82,14 @@ Below is an example for writing tests in Appium using [Cucumber](https://cucumbe
 
 ```
 Feature: Class search
-  To allow a user to find a classes taught by a professor, the school must offer an easy way for users to filter classes by professor name.
+  To allow a user to find a classes taught by a professor, the school must
+  offer an easy way for users to filter classes by professor name.
 
   Scenario: Search classes by professor
     Given I have a list of classes
     When I search classes taught by professor Doe
-    Then I find professor Doe is teaching Algorithms and Software Development I
+    Then I find professor Doe is teaching Algorithms and Software
+    Development I
 ```
 
 Clean right? Now imagine if writing tests was as simple as using common Engish as shown above. Again, this is easy with Appium. Of course there is some work to tie plain english with code, but it's not difficult to do. Xcode doesn't offer a solid solution for integrating something like Cucumber but there is a new framework available that takes advantage of Swift, Gherkin, and Xcode's XCTest. You can see that plugin [here](https://github.com/net-a-porter-mobile/XCTest-Gherkin). Now tests can Xcode can look like this:
@@ -96,7 +98,8 @@ Clean right? Now imagine if writing tests was as simple as using common Engish a
 func testSearchByProfessor() {
         Given("I have a list of classes")
         When("I search for classes taught by professor Doe")
-        Then("I find professor Doe is teaching Algorithms and Software Development")
+        Then("I find professor Doe is teaching Algorithms
+        and Software Development")
 }
 ```
 
@@ -107,6 +110,6 @@ If you are thinking about writing acceptance tests using Xcode and the TDD model
 ## Conclusion
 Personally, after researching Appium and Xcode, I found Xcode to be the winner. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode and are very simple to use. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I'm sure XCTest will only improve in the future.
 
-References:
+###References:
 http://shashikantjagtap.net/ios-automated-testing-in-the-bdd-with-appium-cucumber-on-mac-osx/
 http://www.3pillarglobal.com/insights/appium-a-cross-browser-mobile-automation-tool
