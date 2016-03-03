@@ -1,16 +1,26 @@
 ---
 layout: post
-title: Appium vs Xcode's XCTest
+title: Appium vs. Xcode's XCTest
 comments: True
 ---
 
-# Appium vs Xcode's XCTest
+# Appium vs. Xcode's XCTest
 
 ## Overview
 With the current competitive nature of the App Store, it's important to know whether your app is functioning exactly how you expect it to. Therefore, it's very important to test your app thoroughly using both unit tests and acceptance tests. In this post I will outline two very important tools for acceptance testing, Appium and Xcode's XCTest framework.
 
 ## Why acceptance testing?
 Acceptance testing ensures that the user experience is solid and that your app is functioning as expected. Without acceptance testing, you must conduct manual tests that are both time consuming and dependent on the developer. Acceptance tests allow for developers to automate the testing process and use tools such as "Continuous Integration" (CI).
+
+## The Acceptance Testing Lifecycle
+It's important to decide the workflow for testing your apps. Below is an example of the ATDD (Acceptance Test Driven Development) workflow:
+
+  - Create user experience/story and covert to acceptance tests
+  - Write/Run acceptance tests (they will fail)
+  - Code the app
+  - Track acceptance tests as they begin to pass
+  - Watch all acceptance tests pass
+  - Release app
 
 ## Which frameworks should I consider?
 Given the newest release of UI automated testing to Xcode's XCTest, Xcode is now a large competitor in acceptance testing. However, there are many other frameworks to consider as well that have been tested thoroughly and have a large following. Below is a list of a few:
@@ -30,6 +40,7 @@ This framework is tried and tested by many companies.
 Pros:
 
 - It's open source
+- Uses Selenium and the WebDriver protocol
 - Free to use
 - Supports multiple languages (Java, JavaScript, Objective C,
   .NET, PHP, Python, Ruby, and soon to come... Swift)
@@ -94,16 +105,6 @@ func testSearchByProfessor() {
 Still looks clean right? This was written in Xcode using Swift! With the ability to write clean tests in Xcode, developers can now use Xcode's record option to capture UI actions and then wrap those actions with Gherkin. This is simple to do and has a very small learning curve for developers that have prior iOS experience.
 
 If you are thinking about writing acceptance tests using Xcode and the TDD model, I also recommend you check out [KIF](https://github.com/kif-framework/KIF). KIF makes it easier for testers and developers using Xcode and it can be combined with the Gherkin framework shown above! With the power of Gherkin and KIF, Xcode is on it's way to making acceptance testing much easier for developers and testers.
-
-## The Acceptance Testing Lifecycle
-Lastly, I thought it to be important to describe the workflow for acceptance testing.
-
-  - Create user experience/story and covert to acceptance tests
-  - Write/Run acceptance tests (they will fail)
-  - Code the app
-  - Track acceptance tests as they begin to pass
-  - Watch all acceptance tests pass
-  - Release app
 
 ## Conclusion
 Personally, after researching Appium and Xcode, I found Xcode to be the winner. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode and are very simple to use. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I'm sure XCTest will only improve in the future.
