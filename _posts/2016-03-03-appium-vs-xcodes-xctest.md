@@ -4,8 +4,6 @@ title: Appium vs. Xcode's XCTest
 comments: True
 ---
 
-# Appium vs. Xcode's XCTest
-
 ## Overview
 With the current competitive nature of the App Store, it's important to know whether your app is functioning exactly how you expect it to. Therefore, it's very important to test your app thoroughly using both unit tests and acceptance tests. In this post I will outline two very important tools for acceptance testing, Appium and Xcode's XCTest framework.
 
