@@ -111,6 +111,6 @@ If you are thinking about writing acceptance tests using Xcode and the TDD model
 ## Conclusion
 Personally, after researching Appium and Xcode, I found Xcode to be the winner. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode and are very simple to use. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I'm sure XCTest will only improve in the future.
 
-###References:
+### References
 http://shashikantjagtap.net/ios-automated-testing-in-the-bdd-with-appium-cucumber-on-mac-osx/
 http://www.3pillarglobal.com/insights/appium-a-cross-browser-mobile-automation-tool
