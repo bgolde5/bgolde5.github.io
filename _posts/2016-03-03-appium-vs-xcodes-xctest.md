@@ -82,8 +82,9 @@ Below is an example for writing tests in Appium using [Cucumber](https://cucumbe
 
 ```
 Feature: Class search
-  To allow a user to find a classes taught by a professor, the school must
-  offer an easy way for users to filter classes by professor name.
+  To allow a user to find a classes taught by a professor,
+  the school must offer an easy way for users to filter
+  classes by professor name.
 
   Scenario: Search classes by professor
     Given I have a list of classes
