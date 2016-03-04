@@ -109,9 +109,8 @@ Still looks clean right? This was written in Xcode using Swift! With the ability
 If you are thinking about writing acceptance tests using Xcode and the TDD model, I also recommend you check out [KIF](https://github.com/kif-framework/KIF). KIF makes it easier for testers and developers using Xcode and it can be combined with the Gherkin framework shown above! With the power of Gherkin and KIF, Xcode is on it's way to making acceptance testing much easier for developers and testers.
 
 ## Conclusion
-Personally, after researching Appium and Xcode, I found Xcode to be the winner from the developer perspective. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I'm sure XCTest will only improve in the future.
+Personally, after researching Appium and Xcode, I found Xcode to be the winner from the developer perspective. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode and are very simple to use. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I'm sure XCTest will only improve in the future.
 
 ### References
-
-  - http://shashikantjagtap.net/ios-automated-testing-in-the-bdd-with-appium-cucumber-on-mac-osx/
-  - http://www.3pillarglobal.com/insights/appium-a-cross-browser-mobile-automation-tool
+http://shashikantjagtap.net/ios-automated-testing-in-the-bdd-with-appium-cucumber-on-mac-osx/
+http://www.3pillarglobal.com/insights/appium-a-cross-browser-mobile-automation-tool
