@@ -4,7 +4,7 @@ title: Documenting Your Code in Xcode
 comments: True
 ---
 
-As a developer I'm always trying to balance my time between coding and commenting. I'd prefer to spend as little amount as time as possible commenting my code while at the time time, maximizing the usefulness of my comments. With that said, I'd like to share [VVDocumenter-Xcode](https://github.com/onevcat/VVDocumenter-Xcode) with you.
+As a developer I'm always trying to balance my time between coding and commenting. I'd prefer to spend as little amount of time as possible commenting my code while at the time time, maximizing the usefulness of my comments. With that said, I'd like to share [VVDocumenter-Xcode](https://github.com/onevcat/VVDocumenter-Xcode) with you.
 
 VVDocumenter takes advantage of Xcode's commenting markup language by generating comment stubs for you by simply typing three forward slashes "///" above a parameter, method, etc.
 
