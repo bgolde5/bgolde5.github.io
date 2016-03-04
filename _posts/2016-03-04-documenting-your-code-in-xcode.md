@@ -22,4 +22,4 @@ Pretty right? Now for the icing on the cake.... An open source project called [J
 
 <img src="https://github.com/realm/jazzy/blob/master/screenshot.jpg?raw=true" />
 
-With the combination of the Apple's markup language, VVDocumenter and Jazzy, you now have a powerful toolset to comment you code with minimal effort!
+With the combination of the Apple's markup language, VVDocumenter and Jazzy, you now have a powerful toolset to comment your code with minimal effort!
