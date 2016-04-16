@@ -4,7 +4,7 @@
  <title>Bradley Golden</title>
  <link href="http://bradleygolden.github.io/atom.xml" rel="self"/>
  <link href="http://bradleygolden.github.io/"/>
- <updated>2016-04-15T20:38:58-05:00</updated>
+ <updated>2016-04-15T20:40:08-05:00</updated>
  <id>http://bradleygolden.github.io</id>
  <author>
    <name>Bradley Golden</name>
@@ -13,10 +13,19 @@
 
  
  <entry>
+   <title>ChiSalary</title>
+   <link href="http://bradleygolden.github.io/portfolio/2016/04/15/chisalary/"/>
+   <updated>2016-04-15T00:00:00-05:00</updated>
+   <id>http://bradleygolden.github.io/portfolio/2016/04/15/chisalary</id>
+   <content type="html">&lt;p&gt;This is a test.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Documenting Your Code in Xcode</title>
-   <link href="http://bradleygolden.github.io/2016/03/04/documenting-your-code-in-xcode/"/>
+   <link href="http://bradleygolden.github.io/post/2016/03/04/documenting-your-code-in-xcode/"/>
    <updated>2016-03-04T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/03/04/documenting-your-code-in-xcode</id>
+   <id>http://bradleygolden.github.io/post/2016/03/04/documenting-your-code-in-xcode</id>
    <content type="html">&lt;p&gt;As a developer I’m always trying to balance my time between coding and commenting. I’d prefer to spend as little amount of time as possible commenting my code while at the time time, maximizing the usefulness of my comments. With that said, I’d like to share &lt;a href=&quot;https://github.com/onevcat/VVDocumenter-Xcode&quot;&gt;VVDocumenter-Xcode&lt;/a&gt; with you.&lt;/p&gt;
 
 &lt;p&gt;VVDocumenter takes advantage of Xcode’s commenting markup language by generating comment stubs for you by simply typing three forward slashes “///” above a parameter, method, etc.&lt;/p&gt;
@@ -41,9 +50,9 @@ Pretty right? Now for the icing on the cake…. An open source project called &l
  
  <entry>
    <title>Appium vs. Xcode's XCTest</title>
-   <link href="http://bradleygolden.github.io/2016/03/03/appium-vs-xcodes-xctest/"/>
+   <link href="http://bradleygolden.github.io/post/2016/03/03/appium-vs-xcodes-xctest/"/>
    <updated>2016-03-03T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/03/03/appium-vs-xcodes-xctest</id>
+   <id>http://bradleygolden.github.io/post/2016/03/03/appium-vs-xcodes-xctest</id>
    <content type="html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;With the current competitive nature of the App Store, it’s important to know whether your app is functioning exactly how you expect it to. Therefore, it’s very important to test your app thoroughly using both unit tests and acceptance tests. In this post I will outline two very important tools for acceptance testing, Appium and Xcode’s XCTest framework.&lt;/p&gt;
 
@@ -173,9 +182,9 @@ Pretty right? Now for the icing on the cake…. An open source project called &l
  
  <entry>
    <title>Swift vs. Objective C</title>
-   <link href="http://bradleygolden.github.io/2016/02/22/swift-vs-objective-c/"/>
+   <link href="http://bradleygolden.github.io/post/2016/02/22/swift-vs-objective-c/"/>
    <updated>2016-02-22T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/02/22/swift-vs-objective-c</id>
+   <id>http://bradleygolden.github.io/post/2016/02/22/swift-vs-objective-c</id>
    <content type="html">&lt;iframe src=&quot;https://drive.google.com/file/d/0B3O6dpa-XnSYUjJyQ2lCd2tHSnM/preview&quot; width=&quot;468&quot; height=&quot;202&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
@@ -241,9 +250,9 @@ Pretty right? Now for the icing on the cake…. An open source project called &l
  
  <entry>
    <title>Chicago Salaries iOS Application</title>
-   <link href="http://bradleygolden.github.io/2016/01/14/chicago-salaries-ios-application/"/>
+   <link href="http://bradleygolden.github.io/post/2016/01/14/chicago-salaries-ios-application/"/>
    <updated>2016-01-14T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/01/14/chicago-salaries-ios-application</id>
+   <id>http://bradleygolden.github.io/post/2016/01/14/chicago-salaries-ios-application</id>
    <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Over the winter break, my good friend Oliver San Juan and I wanted to make the best of our time by releasing an application into the app store. After many hours of work we finally completed ChiSalary and had it successfully approved by Apple! You can click the links below to view details about the application.&lt;/p&gt;
 
@@ -265,9 +274,9 @@ Pretty right? Now for the icing on the cake…. An open source project called &l
  
  <entry>
    <title>Asynchronous UI Testing with Xcode</title>
-   <link href="http://bradleygolden.github.io/2016/01/09/asynchronous-ui-testing-with-xcode/"/>
+   <link href="http://bradleygolden.github.io/post/2016/01/09/asynchronous-ui-testing-with-xcode/"/>
    <updated>2016-01-09T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/01/09/asynchronous-ui-testing-with-xcode</id>
+   <id>http://bradleygolden.github.io/post/2016/01/09/asynchronous-ui-testing-with-xcode</id>
    <content type="html">&lt;p&gt;When UI testing with Xcode 7’s new XCTest framework, you may find yourself in need a of a reliable way to make asynchronous calls when testing various components. I’ve created a simple application for you to use to see this concept in action.&lt;/p&gt;
 
 &lt;p&gt;Before you scroll below or download the app, first I will give you a big picture of what the scenario is. I have an application that currently displays a submit button. Upon pressing the submit button, a request that takes between 1 and 5 seconds occurs. After the request is complete, a contact button becomes available.&lt;/p&gt;
@@ -396,9 +405,9 @@ Pretty right? Now for the icing on the cake…. An open source project called &l
  
  <entry>
    <title>Three Random Slices of Wisdom for Student Developers</title>
-   <link href="http://bradleygolden.github.io/2016/01/08/three-random-slices-of-wisdom-for-student-developers/"/>
+   <link href="http://bradleygolden.github.io/post/2016/01/08/three-random-slices-of-wisdom-for-student-developers/"/>
    <updated>2016-01-08T00:00:00-06:00</updated>
-   <id>http://bradleygolden.github.io/2016/01/08/three-random-slices-of-wisdom-for-student-developers</id>
+   <id>http://bradleygolden.github.io/post/2016/01/08/three-random-slices-of-wisdom-for-student-developers</id>
    <content type="html">&lt;p&gt;As I’m writing this post, I’m entering my last semester as a senior majoring in Computer Science at the University of Illinois at Chicago. I feel it’s important for me to guide you because I’ve had the privilege to make A LOT of mistakes over the last 4 years as a college student/aspiring developer. My wish for you is that you take something from this post that helps you on your path to success.&lt;/p&gt;
 
 &lt;p&gt;Take note, this post is not only for students! You may very well find some useful information here. Also, please be sure to comment below with your advice, feedback, questions, etc.&lt;/p&gt;

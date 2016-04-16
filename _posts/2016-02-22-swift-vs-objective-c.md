@@ -2,6 +2,7 @@
 layout: post
 title: Swift vs. Objective C
 comments: True
+categories: ['post']
 ---
 
 <iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYUjJyQ2lCd2tHSnM/preview" width="468" height="202"></iframe>

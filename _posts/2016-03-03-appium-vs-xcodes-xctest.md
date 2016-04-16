@@ -2,6 +2,7 @@
 layout: post
 title: Appium vs. Xcode's XCTest
 comments: True
+categories: ['post']
 ---
 
 ## Overview
