@@ -6,6 +6,7 @@
           Required Knowledge and Skills: iOS Development, Objective C, SQLite,
           Xcode, MVC Architecture, OOP, N-Tier Architecture, Teamwork
   image: chisalary.png
+  url: http://tinyurl.com/chisalary
 
 - name: Arduino Home Security System
   description: >
@@ -15,3 +16,4 @@
   skills: >
           Required Knowledge and Skills: Arduino Hardware, C
   image: arduino.png
+  url: https://www.youtube.com/watch?v=8FVMta54NvA&feature=youtu.be

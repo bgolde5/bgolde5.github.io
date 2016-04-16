@@ -8,8 +8,7 @@ title: Portfolio
 <p align="center">
   <img src="{{ site.url }}/assets/{{ project.image }}" width="300" />
 </p>
-  * **Description:** {{ project.description }}
-  * **Skills Required:** {{ project.skills }}
-
-
+  * {{ project.description }}
+  * {{ project.skills }}
+  * [See more here]({{ project.url }})
 {% endfor %}
