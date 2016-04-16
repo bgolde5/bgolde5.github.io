@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Appium vs. Xcode's XCTest &middot; Bradley Golden
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Bradley Golden" href="/atom.xml">
+</head>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71798858-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  <body>
+
+	  <div class="container content">
+		  <header class="masthead">
+			  <h3 class="masthead-title">
+				  <a href="/" title="Home">Bradley Golden</a>
+
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/about">About</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/portfolio">Portfolio</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/archive">Archive</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/resume">Resume</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/linkedin">LinkedIn</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/atom.xml">Feed</a></small>
+				  
+			  </h3>
+
+		  </header>
+
+		  <main>
+		  <article class="post">
+  <h1 class="post-title">Appium vs. Xcode's XCTest</h1>
+  <time datetime="2016-03-03T00:00:00-06:00" class="post-date">03 Mar 2016</time>
+  <h2 id="overview">Overview</h2>
+<p>With the current competitive nature of the App Store, it’s important to know whether your app is functioning exactly how you expect it to. Therefore, it’s very important to test your app thoroughly using both unit tests and acceptance tests. In this post I will outline two very important tools for acceptance testing, Appium and Xcode’s XCTest framework.</p>
+
+<h2 id="why-acceptance-testing">Why acceptance testing?</h2>
+<p>Acceptance testing ensures that the user experience is solid and that your app is functioning as expected. Without acceptance testing, you must conduct manual tests that are both time consuming and dependent on the developer. Acceptance tests allow for developers to automate the testing process and use tools such as “Continuous Integration” (CI).</p>
+
+<h2 id="the-acceptance-testing-lifecycle">The Acceptance Testing Lifecycle</h2>
+<p>It’s important to decide the workflow for testing your apps. Below is an example of the ATDD (Acceptance Test Driven Development) workflow:</p>
+
+<ul>
+  <li>Create user experience/story and covert to acceptance tests</li>
+  <li>Write/Run acceptance tests (they will fail)</li>
+  <li>Code the app</li>
+  <li>Track acceptance tests as they begin to pass</li>
+  <li>Watch all acceptance tests pass</li>
+  <li>Release app</li>
+</ul>
+
+<h2 id="which-frameworks-should-i-consider">Which frameworks should I consider?</h2>
+<p>Given the newest release of UI automated testing to Xcode’s XCTest, Xcode is now a large competitor in acceptance testing. However, there are many other frameworks to consider as well that have been tested thoroughly and have a large following. Below is a list of a few:</p>
+
+<ul>
+  <li>Appium</li>
+  <li>Xcode’s XCTest</li>
+  <li>Calabash</li>
+  <li>Frank</li>
+  <li>And more…</li>
+</ul>
+
+<p>I’m going to cover Appium and Xcode only for this post because personally, I’ve found these two to be the most convenient for mobile developers with little to no web experience or knowledge of ruby.</p>
+
+<h2 id="appium">Appium</h2>
+<p>This framework is tried and tested by many companies.</p>
+
+<p>Pros:</p>
+
+<ul>
+  <li>It’s open source</li>
+  <li>Uses Selenium and the WebDriver protocol</li>
+  <li>Free to use</li>
+  <li>Supports multiple languages (Java, JavaScript, Objective C,
+.NET, PHP, Python, Ruby, and soon to come… Swift)</li>
+  <li>Can be used with Android and iOS</li>
+  <li>Tests the same application file that you plan to submit to the App Store/Google Play. This is a bonus for ensuring that the final build for your app is fully functional.</li>
+  <li>Has a large community</li>
+  <li>Can be used with Cucumber</li>
+</ul>
+
+<p>Cons:</p>
+
+<ul>
+  <li>With iOS, running tests simultaneously with a simulator requires a separate iOS device for each simulator. Using a cloud based continuous integration service such as Sauce Labs can fix this issue.</li>
+  <li>Not compatible with Android API’s lower than 16. They use Selendroid to fix this but this results in more complexity.</li>
+  <li>Challenging to implement certain gestures</li>
+  <li>A lot more overhead for developers to learn on top of the development process</li>
+</ul>
+
+<h2 id="xctest">XCTest</h2>
+<p>This framework is now baked into Xcode. Developers can simply press a record button and build their UI tests with minimal effort.</p>
+
+<p>Pros:</p>
+
+<ul>
+  <li>Very little overhead for developers to learn</li>
+  <li>Used with native iOS languages</li>
+  <li>Allows for continuous integration</li>
+  <li>Faster than many external frameworks</li>
+</ul>
+
+<p>Cons:</p>
+
+<ul>
+  <li>No cross platform support</li>
+  <li>Restricted to Objective C or Swift</li>
+  <li>Is very new and contains some bugs</li>
+</ul>
+
+<h2 id="do-i-choose-appium-or-xcode">Do I choose Appium or Xcode?</h2>
+<p>First it depends on your preferences. If you’re willing to learn a new framework like Appium and possibly a new language in exchange for cross platform support, then Appium may be for you. It allows you to reuse code and it minimizes the work on the testing team because the language is the same across multiple test cases and multiple platforms. However, if the developers not on the testing team are required to write acceptance tests, then Appium may have an unrealistic learning curve.</p>
+
+<p>Learning Appium requires knowledge of how to use Selenium and the WebDriver protocol which in itself is a lot to ask of the development team. I for one would be much more comfortable working in the Xcode environment with XCTest rather than using Appium.</p>
+
+<h2 id="creating-readable-tests-with-appium-and-xcode">Creating Readable Tests with Appium and Xcode</h2>
+<p>With a testing framework, it’s important that tests are clearly understandable by people from all facets of the development process. It’s also important that developers are able to write tests in an intuitive way. Both Appium and Xcode offer support in this area.</p>
+
+<p>Below is an example for writing tests in Appium using <a href="https://cucumber.io/">Cucumber</a>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Feature: Class search
+  To allow a user to find a classes taught by a professor,
+  the school must offer an easy way for users to filter
+  classes by professor name.
+
+  Scenario: Search classes by professor
+    Given I have a list of classes
+    When I search classes taught by professor Doe
+    Then I find professor Doe is teaching Algorithms and Software
+    Development I
+</code></pre>
+</div>
+
+<p>Clean right? Now imagine if writing tests was as simple as using common Engish as shown above. Again, this is easy with Appium. Of course there is some work to tie plain english with code, but it’s not difficult to do. Xcode doesn’t offer a solid solution for integrating something like Cucumber but there is a new framework available that takes advantage of Swift, Gherkin, and Xcode’s XCTest. You can see that plugin <a href="https://github.com/net-a-porter-mobile/XCTest-Gherkin">here</a>. Now tests in Xcode can look like this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>func testSearchByProfessor() {
+        Given("I have a list of classes")
+        When("I search for classes taught by professor Doe")
+        Then("I find professor Doe is teaching Algorithms
+        and Software Development")
+}
+</code></pre>
+</div>
+
+<p>Still looks clean right? This was written in Xcode using Swift! With the ability to write clean tests in Xcode, developers can now use Xcode’s record option to capture UI actions and then wrap those actions with Gherkin. This is simple to do and has a very small learning curve for developers that have prior iOS experience.</p>
+
+<p>If you are thinking about writing acceptance tests using Xcode and the TDD model, I also recommend you check out <a href="https://github.com/kif-framework/KIF">KIF</a>. KIF makes it easier for testers and developers using Xcode and it can be combined with the Gherkin framework shown above! With the power of Gherkin and KIF, Xcode is on it’s way to making acceptance testing much easier for developers and testers.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Personally, after researching Appium and Xcode, I found Xcode to be the winner from the developer perspective. As a mobile developer, I want to spend as little amount of time testing as possible. At the same time, I want to ensure the tests I write are complete. If I use Xcode, then I have the luxury of working in a familiar environment with a language that I know well. Adding a few frameworks such as Gherkin and KIF is simple as they easily integrate with Xcode. Not only are these frameworks simple to use, Xcode is obviously stepping up their support for acceptance testing and I’m sure XCTest will only improve in the future.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>http://shashikantjagtap.net/ios-automated-testing-in-the-bdd-with-appium-cucumber-on-mac-osx/</li>
+  <li>http://www.3pillarglobal.com/insights/appium-a-cross-browser-mobile-automation-tool</li>
+</ul>
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2016/03/04/documenting-your-code-in-xcode/">
+            Documenting Your Code in Xcode
+            <small><time datetime="2016-03-04T00:00:00-06:00">04 Mar 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/02/22/swift-vs-objective-c/">
+            Swift vs. Objective C
+            <small><time datetime="2016-02-22T00:00:00-06:00">22 Feb 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/01/14/chicago-salaries-ios-application/">
+            Chicago Salaries iOS Application
+            <small><time datetime="2016-01-14T00:00:00-06:00">14 Jan 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+		  </main>
+
+			<footer class="footer">
+				
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//bradleygolden.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+				<small>
+					&copy; <time datetime="2016-04-15T20:38:58-05:00">2016</time>. All rights reserved.
+				</small>
+			</footer>
+		</div>
+
+
+		<script id="dsq-count-scr" src="//bradleygolden.disqus.com/count.js" async></script>
+	</body>
+</html>
