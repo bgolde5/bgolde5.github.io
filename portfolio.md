@@ -7,5 +7,6 @@ title: Portfolio
 ## {{ project.name }}
   * {{ project.description }}
   * {{ project.skills }}
-  ![screenshot]({{ site.url }}/assets/{{ project.image }})
+  <img src="{{ site.url }}/assets/{{ project.image }}" width=10">
+  ![screenshot]({{ site.url }}/assets/{{ project.image }} =50x)
 {% endfor %}
