@@ -7,6 +7,8 @@
           Xcode, MVC Architecture, OOP, N-Tier Architecture, Teamwork
   image: chisalary.png
   url: http://tinyurl.com/chisalary
+  url_image: app_store.png
+  url_title: App Store Link
 
 - name: Arduino Home Security System
   description: >
@@ -17,3 +19,4 @@
           Required Knowledge and Skills: Arduino Hardware, C
   image: arduino.png
   url: https://www.youtube.com/watch?v=8FVMta54NvA&feature=youtu.be
+  url_title: Youtube Demonstration
