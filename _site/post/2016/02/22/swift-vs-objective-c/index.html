@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Swift vs. Objective C &middot; Bradley Golden
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Bradley Golden" href="/atom.xml">
+</head>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71798858-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  <body>
+
+	  <div class="container content">
+		  <header class="masthead">
+			  <h3 class="masthead-title">
+				  <a href="/" title="Home">Bradley Golden</a>
+
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/about">About</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/portfolio">Portfolio</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/archive">Archive</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/resume">Resume</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/linkedin">LinkedIn</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/atom.xml">Feed</a></small>
+				  
+			  </h3>
+
+		  </header>
+
+		  <main>
+		  <article class="post">
+  <h1 class="post-title">Swift vs. Objective C</h1>
+  <time datetime="2016-02-22T00:00:00-06:00" class="post-date">22 Feb 2016</time>
+  <iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYUjJyQ2lCd2tHSnM/preview" width="468" height="202"></iframe>
+
+<h2 id="introduction">Introduction</h2>
+<p>So you’re interested in developing software in Swift or Objective-C, but how do you know which to choose? I work at an enterprise level company that has recently researched this question, and I want to briefly share with you my findings so that you can make an informed decision.</p>
+
+<p>I will begin with a simple Q &amp; A.</p>
+
+<h4 id="can-i-write-a-complete-swift-framework-without-depending-on-objective-c">Can I write a complete Swift framework without depending on Objective-C?</h4>
+<p>Yes, many popular apps such as lyft, Yahoo Weather, and LinkedIn are now entirely built in Swift. The process for creating a framework is similar except Objective-C is now replaced with Swift.</p>
+
+<p>Reference: <a href="http://www.apple.com/swift/">http://www.apple.com/swift/</a></p>
+
+<h4 id="are-swift-frameworks-compatible-with-apps-written-in-objective-c">Are Swift frameworks compatible with app’s written in Objective-C?</h4>
+<p>Yes, Swift frameworks are compatible with apps previously written in Objective-C with some caveats. The following Swift only features will not be available to Objective-C apps:</p>
+
+<ul>
+  <li>Generics</li>
+  <li>Tuples</li>
+  <li>Enumerations defined in Swift without Int raw value type</li>
+  <li>Structures defined in Swift</li>
+  <li>Top-level functions defined in Swift</li>
+  <li>Global variables defined in Swift</li>
+  <li>Type aliases defined in Swift</li>
+  <li>Swift-style variadics</li>
+  <li>Nested types</li>
+  <li>Curried functions</li>
+</ul>
+
+<p>Reference: <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html#//apple_ref/doc/uid/TP40014216-CH10-ID136">https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html#//apple_ref/doc/uid/TP40014216-CH10-ID136</a></p>
+
+<p>Reference: <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html">https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html</a></p>
+
+<h4 id="are-there-any-popular-sdks-or-open-source-libraries-already-written-in-swift-eg-alamofire">Are there any popular SDK’s or open source libraries already written in Swift? (e.g. Alamofire)</h4>
+<p>Yes, 1/3 of the SDK’s found on <a href="https://medium.com/app-coder-io/27-ios-open-source-libraries-to-skyrocket-your-development-301b67d3124c#.2ypapea5x">this website</a> are written in Swift.</p>
+
+<h4 id="what-are-the-downsides-of-using-sdks-written-in-swift">What are the downsides of using SDK’s written in Swift?</h4>
+<p>Some features in Swift are not available to Objective-C as mentioned earlier. Also, because Swift is a fairly new language, the support for it is not as thorough as Objective-C. This is changing though!</p>
+
+<h4 id="is-swift-compatible-with-cocoapods">Is Swift compatible with CocoaPods?</h4>
+<p>Yes, you can use any pod written in Objective-C, Swift or both with an app written in Objective-C, Swift, or both. Just remember that some Swift features are not compatible with Objective-C.</p>
+
+<p>Reference: <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html">https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html</a></p>
+
+<h4 id="whats-going-to-be-changed-in-swift-in-the-near-future">What’s going to be changed in Swift in the near future?</h4>
+<p>All information regarding upcoming changes to Swift can be found here: <a href="https://github.com/apple/swift-evolution">https://github.com/apple/swift-evolution</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>After asking these questions myself, I determined this:</p>
+
+<ol>
+  <li>
+    <p>There are still many companies out there using Objective-C. With that said, I’ve decided to continue to write SDK’s in Objective-C, because I know that they will be compatible with both Objective-C apps and Swift apps. This is not the case however if we decide to write SDK’s solely in Swift.</p>
+  </li>
+  <li>
+    <p>If I’m building an application that will have zero possible Objective-C dependencies, then Swift is a sure way to go because of its clean style and easy to learn syntax.</p>
+  </li>
+  <li>
+    <p>I will reassess this decision in the next year as the next Swift versions are introduced and I can determine that my clients will no longer need Objective-C frameworks.</p>
+  </li>
+</ol>
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/portfolio/2016/04/15/chisalary/">
+            ChiSalary
+            <small><time datetime="2016-04-15T00:00:00-05:00">15 Apr 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/post/2016/03/04/documenting-your-code-in-xcode/">
+            Documenting Your Code in Xcode
+            <small><time datetime="2016-03-04T00:00:00-06:00">04 Mar 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/post/2016/03/03/appium-vs-xcodes-xctest/">
+            Appium vs. Xcode's XCTest
+            <small><time datetime="2016-03-03T00:00:00-06:00">03 Mar 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+		  </main>
+
+			<footer class="footer">
+				
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//bradleygolden.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+				<small>
+					&copy; <time datetime="2016-04-15T20:38:07-05:00">2016</time>. All rights reserved.
+				</small>
+			</footer>
+		</div>
+
+
+		<script id="dsq-count-scr" src="//bradleygolden.disqus.com/count.js" async></script>
+	</body>
+</html>

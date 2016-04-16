@@ -1,0 +1,17 @@
+- name: ChiSalary
+  description: >
+               Designed and developed an iOS application that allows users
+               to view the salaries of employees employed by the City of Chicago.
+  skills: >
+          Required Knowledge and Skills: iOS Development, Objective C, SQLite,
+          Xcode, MVC Architecture, OOP, N-Tier Architecture, Teamwork
+  image: chisalary.png
+
+- name: Arduino Home Security System
+  description: >
+               Programmed and constructed a security system that notifies both
+               homeowners and neighbors via text message if there is an intruder
+               entering homes in the neighborhood.
+  skills: >
+          Required Knowledge and Skills: Arduino Hardware, C
+  image: arduino.png

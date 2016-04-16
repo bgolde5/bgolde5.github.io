@@ -2,6 +2,7 @@
 layout: post
 title: Three Random Slices of Wisdom for Student Developers
 comments: True
+categories: ['post']
 ---
 
 As I'm writing this post, I'm entering my last semester as a senior majoring in Computer Science at the University of Illinois at Chicago. I feel it's important for me to guide you because I've had the privilege to make A LOT of mistakes over the last 4 years as a college student/aspiring developer. My wish for you is that you take something from this post that helps you on your path to success.

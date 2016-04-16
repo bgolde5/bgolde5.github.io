@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Documenting Your Code in Xcode &middot; Bradley Golden
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Bradley Golden" href="/atom.xml">
+</head>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71798858-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  <body>
+
+	  <div class="container content">
+		  <header class="masthead">
+			  <h3 class="masthead-title">
+				  <a href="/" title="Home">Bradley Golden</a>
+
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/about">About</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/portfolio">Portfolio</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/archive">Archive</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/resume">Resume</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/linkedin">LinkedIn</a></small>
+				  
+				  &nbsp;&nbsp;&nbsp;
+				  <small><a href="/atom.xml">Feed</a></small>
+				  
+			  </h3>
+
+		  </header>
+
+		  <main>
+		  <article class="post">
+  <h1 class="post-title">Documenting Your Code in Xcode</h1>
+  <time datetime="2016-03-04T00:00:00-06:00" class="post-date">04 Mar 2016</time>
+  <p>As a developer I’m always trying to balance my time between coding and commenting. I’d prefer to spend as little amount of time as possible commenting my code while at the time time, maximizing the usefulness of my comments. With that said, I’d like to share <a href="https://github.com/onevcat/VVDocumenter-Xcode">VVDocumenter-Xcode</a> with you.</p>
+
+<p>VVDocumenter takes advantage of Xcode’s commenting markup language by generating comment stubs for you by simply typing three forward slashes “///” above a parameter, method, etc.</p>
+
+<iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYSmthazB3MFlIbEk/preview" width="400" height="150"></iframe>
+
+<p><br />
+If you’re not familiar with Xcode’s commenting markup language, please visit <a href="https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/HeaderDoc/tags/tags.html#//apple_ref/doc/uid/TP40001215-CH346-CHDJFEGF">this</a> website for Objective-C or <a href="https://developer.apple.com/library/ios/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497-CH2-SW1">this</a> website for Swift. If you’re familiar with Javadocs, Xcode’s markup language for Objective C and Swift is very similar.</p>
+
+<p>Lastly, the final question is, why care about commenting code in a particular way? In Xcode, if you use the option key and hover over a method, you’ll see a question mark appear and the method will highlight blue. If you click a properly commented method, you’ll see something like this:</p>
+
+<iframe src="https://drive.google.com/file/d/0B3O6dpa-XnSYLXVsSmt4dWlxU0E/preview" width="400" height="150"></iframe>
+
+<p><br />
+Pretty right? Now for the icing on the cake…. An open source project called <a href="https://github.com/realm/jazzy">Jazzy</a> is gaining momentum. Jazzy is very similar to Javadocs in the sense that it produces a very pretty html document similar to Apple’s standard documentation.</p>
+
+<p><img src="https://github.com/realm/jazzy/blob/master/screenshot.jpg?raw=true" /></p>
+
+<p>With the combination of the Apple’s markup language, VVDocumenter and Jazzy, you now have a powerful toolset to comment your code and produce professional documentation with minimal effort!</p>
+
+</article>
+
+
+<aside class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/portfolio/2016/04/15/chisalary/">
+            ChiSalary
+            <small><time datetime="2016-04-15T00:00:00-05:00">15 Apr 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/post/2016/03/03/appium-vs-xcodes-xctest/">
+            Appium vs. Xcode's XCTest
+            <small><time datetime="2016-03-03T00:00:00-06:00">03 Mar 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/post/2016/02/22/swift-vs-objective-c/">
+            Swift vs. Objective C
+            <small><time datetime="2016-02-22T00:00:00-06:00">22 Feb 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</aside>
+
+
+		  </main>
+
+			<footer class="footer">
+				
+<!-- Add Disqus comments. -->
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//bradleygolden.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+				<small>
+					&copy; <time datetime="2016-04-15T20:38:07-05:00">2016</time>. All rights reserved.
+				</small>
+			</footer>
+		</div>
+
+
+		<script id="dsq-count-scr" src="//bradleygolden.disqus.com/count.js" async></script>
+	</body>
+</html>
