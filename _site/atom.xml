@@ -4,22 +4,13 @@
  <title>Bradley Golden</title>
  <link href="http://bradleygolden.github.io/atom.xml" rel="self"/>
  <link href="http://bradleygolden.github.io/"/>
- <updated>2016-04-15T20:43:31-05:00</updated>
+ <updated>2016-04-15T20:44:16-05:00</updated>
  <id>http://bradleygolden.github.io</id>
  <author>
    <name>Bradley Golden</name>
    <email>golden.bradley@gmail.com</email>
  </author>
 
- 
- <entry>
-   <title>ChiSalary</title>
-   <link href="http://bradleygolden.github.io/portfolio/2016/04/15/chisalary/"/>
-   <updated>2016-04-15T00:00:00-05:00</updated>
-   <id>http://bradleygolden.github.io/portfolio/2016/04/15/chisalary</id>
-   <content type="html">&lt;p&gt;This is a test.&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>Documenting Your Code in Xcode</title>
