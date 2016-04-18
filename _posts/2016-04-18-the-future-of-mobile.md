@@ -18,6 +18,6 @@ HoloLens is shortening that gap between the 2D to 3D. What HoloLens is, is an au
 
 John is a developer at XYZ company. He works from home and regularly has meetings with his coworkers in his living room. They appear to be real and present in 3D there in the space. It's as if John could reach out and touch them but reality isn't what it seems. They actually are not in John's living room. Although they appear to be there with him, they too are also at home and in their living rooms (or where ever they choose). They're all wearing the HoloLens and each team member is actually projecting a holograph of themselves to each other team member. Cool right? Take a look at the picture below to see an example of something like this in real life:
 
-![Augmented Meeting]({{ site.base_url}}/assets/hololens1.png width 200px)
+![Augmented Meeting]({{ site.base_url}}/assets/hololens1.png =200px)
 
 The man on the left is a real human and his name is Alex Kipman. He's actually the inventor of the HoloLens. The man on the right is Jeffery Norris from NASA. Live on the TED stage, they gave a glimpse of the reality of where mobile tech is going. That is, the ability to project holograms of ourselves into someone else's vision.
