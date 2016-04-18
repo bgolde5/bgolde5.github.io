@@ -2,7 +2,6 @@
 layout: post
 title: Asynchronous UI Testing with Xcode
 comments: True
-categories: ['post']
 ---
 
 When UI testing with Xcode 7's new XCTest framework, you may find yourself in need a of a reliable way to make asynchronous calls when testing various components. I've created a simple application for you to use to see this concept in action.

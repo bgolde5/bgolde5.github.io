@@ -2,7 +2,6 @@
 layout: post
 title: Chicago Salaries iOS Application
 comments: True
-categories: ['post']
 ---
 
 ## Introduction
