@@ -4,9 +4,7 @@ title: Food Computers
 comments: True
 ---
 
-https://www.ted.com/talks/caleb_harper_this_computer_will_grow_your_food_in_the_future
-
-This a review of a TED talk given by Caleb Harper about the technology he's working on. He
+This a review of a [TED talk](https://www.ted.com/talks/caleb_harper_this_computer_will_grow_your_food_in_the_future) given by Caleb Harper about the technology he's working on. He
 calls it the "Food Computer". The Food Computer is a piece of technology that allows us as humans to micromanage the growing of our food. He call's it, "Democratizing Climate". By using these food computers, we will be able to control the environment where our food grows so long as we have access to a food computer. With this technology, we could be in Texas and simulate growing California strawberries by mimicking the environment. This is done through various gauges and sensors. Take a look at the image below to see a food computer:
 
 ![Food Computer](/assets/food_computer.jpg)
